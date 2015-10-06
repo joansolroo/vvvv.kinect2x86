@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\vvvv\projects\vvvv.kinect2x86\Modules\KinectClient (SharedTexture).v4p" systemname="KinectClient (SharedTexture)" filename="C:\inria\vvvv\projects\sandbox\Modules\KinectClient (SharedTexture).v4p" scrollx="0" scrolly="1035">
+   <PATCH nodename="C:\vvvv\projects\vvvv.sandbox\Modules\KinectClient (SharedTexture).v4p" systemname="KinectClient (SharedTexture)" filename="C:\inria\vvvv\projects\sandbox\Modules\KinectClient (SharedTexture).v4p" scrollx="0" scrolly="1035">
    <BOUNDS type="Window" left="30045" top="7890" width="16020" height="8445">
    </BOUNDS>
    <PACK Name="image" Version="0.2.0">
@@ -759,7 +759,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="285" top="4275" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="29835" top="1095" width="14190" height="10410">
+   <BOUNDS type="Window" left="11565" top="4545" width="14190" height="10410">
    </BOUNDS>
    <PIN pinname="Texture In" visible="1" slicecount="1" values="||">
    </PIN>
@@ -771,7 +771,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="2145" top="3960" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="29835" top="1095" width="14190" height="10410">
+   <BOUNDS type="Window" left="11565" top="4545" width="14190" height="10410">
    </BOUNDS>
    <PIN pinname="Texture In" visible="1" slicecount="1" values="||">
    </PIN>
@@ -783,7 +783,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="6180" top="4080" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="29835" top="1095" width="14190" height="10410">
+   <BOUNDS type="Window" left="11565" top="4545" width="14190" height="10410">
    </BOUNDS>
    <PIN pinname="Texture In" visible="1" slicecount="1" values="||">
    </PIN>
@@ -799,7 +799,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="4560" top="3465" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="29835" top="1095" width="14190" height="10410">
+   <BOUNDS type="Window" left="11565" top="4545" width="14190" height="10410">
    </BOUNDS>
    <PIN pinname="Texture In" visible="1" slicecount="1" values="||">
    </PIN>
@@ -881,7 +881,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="360" top="7440" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="29835" top="1095" width="14190" height="10410">
+   <BOUNDS type="Window" left="11565" top="4545" width="14190" height="10410">
    </BOUNDS>
    <PIN pinname="Texture In" visible="1" slicecount="1" values="||">
    </PIN>
@@ -895,7 +895,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="2370" top="7770" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="29835" top="1095" width="14190" height="10410">
+   <BOUNDS type="Window" left="11565" top="4545" width="14190" height="10410">
    </BOUNDS>
    <PIN pinname="Texture In" visible="1" slicecount="1" values="||">
    </PIN>
@@ -909,7 +909,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="4350" top="7050" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="29835" top="1095" width="14190" height="10410">
+   <BOUNDS type="Window" left="11565" top="4545" width="14190" height="10410">
    </BOUNDS>
    <PIN pinname="Texture In" visible="1" slicecount="1" values="||">
    </PIN>
@@ -923,7 +923,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="6165" top="7920" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="29835" top="1095" width="14190" height="10410">
+   <BOUNDS type="Window" left="11565" top="4545" width="14190" height="10410">
    </BOUNDS>
    <PIN pinname="Texture In" visible="1" slicecount="1" values="||">
    </PIN>

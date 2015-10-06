@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\vvvv\projects\vvvv.kinect2x86\Modules\KinectSender (Kinect2 SharedTexture).v4p" systemname="KinectSender (Kinect2 SharedTexture)" filename="C:\vvvv\projects\vvvv.sandbox\Modules\KinectSender (Kinect2 SharedTexture).v4p" scrollx="0" scrolly="5910">
+   <PATCH nodename="C:\vvvv\projects\vvvv.kinect2x86\Modules\KinectSender (Kinect2 SharedTexture).v4p" systemname="KinectSender (Kinect2 SharedTexture)" filename="C:\vvvv\projects\vvvv.sandbox\Modules\KinectSender (Kinect2 SharedTexture).v4p" scrollx="0" scrolly="4155">
    <BOUNDS type="Window" left="2865" top="1320" width="25935" height="9720">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
