@@ -1,0 +1,43 @@
+//@author: vux
+//@help: template for texture fx
+//@tags: texture
+//@credits: 
+
+Texture2D texture1 : PREVIOUS;
+Texture2D texture2;
+Texture2D texture3;
+Texture2D texture4;
+float4 factors=float4(1,1,1,1)/4;
+SamplerState linearSampler : IMMUTABLE
+{
+    Filter = MIN_MAG_MIP_LINEAR;
+    AddressU = Clamp;
+    AddressV = Clamp;
+};
+
+struct psInput
+{
+	float4 p : SV_Position;
+	float2 uv : TEXCOORD0;
+};
+
+
+float4 PS(psInput input) : SV_Target
+{
+	float4 c1 = texture1.Sample(linearSampler,input.uv)*factors.x;
+	float4 c2 = texture2.Sample(linearSampler,input.uv)*factors.y;
+	float4 c3 = texture3.Sample(linearSampler,input.uv)*factors.z;
+	float4 c4 = texture4.Sample(linearSampler,input.uv)*factors.w;
+	return (c1+c2+c3+c4);
+}
+
+technique10 Process
+{
+	pass P0
+	{
+		SetPixelShader(CompileShader(ps_4_0,PS()));
+	}
+}
+
+
+

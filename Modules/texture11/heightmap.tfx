@@ -1,0 +1,83 @@
+//@author: vux
+//@help: template for texture fx
+//@tags: texture
+//@credits: 
+
+Texture2D texture2d : PREVIOUS;
+Texture2D control ;
+float4x4 tV;
+float3 scale = {1,1,1};
+SamplerState linearSampler : IMMUTABLE
+{
+    Filter = MIN_MAG_MIP_LINEAR;
+    AddressU = Clamp;
+    AddressV = Clamp;
+};
+
+struct psInput
+{
+	float4 p : SV_Position;
+	float2 uv : TEXCOORD0;
+};
+
+float4 PS_uv(psInput input) : SV_Target
+{
+	return float4(input.uv,0,1);
+	
+}
+
+technique10 UV
+{
+	pass P0
+	{
+		SetPixelShader(CompileShader(ps_4_0,PS_uv()));
+	}
+}
+
+
+float4 PS_remap(psInput input) : SV_Target
+{
+	float2 uv = control.Sample(linearSampler,input.uv).xy;
+	float4 c = texture2d.Sample(linearSampler,uv);
+	float4 cV = mul(c,tV);
+	return cV;
+}
+
+technique10 Remap
+{
+	pass P0
+	{
+		SetPixelShader(CompileShader(ps_4_0,PS_remap()));
+	}
+}
+
+float4 PS_transform(psInput input) : SV_Target
+{
+	
+	float4 c = texture2d.Sample(linearSampler,input.uv);
+	float4 cv = float4(mul(float4(c.xyz,1),tV).xyz*scale,1);
+	return cv;
+}
+
+technique10 Transform
+{
+	pass P0
+	{
+		SetPixelShader(CompileShader(ps_4_0,PS_transform()));
+	}
+}
+
+float4 PS_Zcolor(psInput input) : SV_Target
+{
+	float4 c = texture2d.Sample(linearSampler,input.uv);
+	float h = min(1,max(0,c.y))*10;
+	return float4(h/2,h*2-1,1-h,1);
+}
+
+technique10 ZColor
+{
+	pass P0
+	{
+		SetPixelShader(CompileShader(ps_4_0,PS_Zcolor()));
+	}
+}
