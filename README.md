@@ -11,6 +11,7 @@ Open **_root_server (x64).v4p**, and keep it open
 In order to be able to run two versions of vvvv, it is necesary to use the parameter **/allowmultiple**, like this:
     "<vvvv.location>\vvvv.exe /allowmultiple"
 Either running it:
+
   a. using command line 
   b. creating an shortcut 
 
