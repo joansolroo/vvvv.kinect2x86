@@ -18,5 +18,5 @@ This can be done either:<br/>
 
 ![Image of how to setup the shortcut](https://github.com/joansolroo/vvvv.kinect2x86/blob/master/Documentation/vvvv_allowmultiple.png)
 <br/>
-2.2. Use the kinect clientclient
+2.2. Use the kinect client<br/>
 Open **_example_client (x86).v4p**
