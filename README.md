@@ -18,4 +18,4 @@ Either running it:
 ![Image of how to setup the shortcut](https://github.com/joansolroo/vvvv.kinect2x86/blob/master/Documentation/vvvv_allowmultiple.png)
 
 2.2. Use the client
-2.2. Open **_example_client (x86).v4p**
+Open **_example_client (x86).v4p**
