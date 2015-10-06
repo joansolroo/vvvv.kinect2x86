@@ -9,7 +9,7 @@ Open **_root_server (x64).v4p**, and keep it open
 
 2. Run the client on vvvv.32 bits<br/>
 2.1. In order to be able to run two versions of vvvv, it is necesary to use the parameter **/allowmultiple**, like this:
-    "<vvvv.version>\vvvv.exe /allowmultiple"
+    "vvvv.version\vvvv.exe /allowmultiple"
 This can be done either:<br/>
 
   a. using command prompt 
