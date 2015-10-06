@@ -5,9 +5,7 @@ VVVV nodes required to use kinect2 on vvvv.32bits
 In order to be able to access the kinect2 textures from vvvv.32bits it is necesary to stream them through shared memory.
 
 1. Run the server on vvvv.64 bits
-1.1. Open **_root_server (x64).v4p**
-
-1.2. Keep it open
+Open **_root_server (x64).v4p**, and keep it open
 
 2. Run the client on vvvv.32 bits
 3. 
